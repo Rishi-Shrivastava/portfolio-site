@@ -2,150 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rishi Shrivastava | Infrastructure Automation Engineer</title>
-
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fa; }
-    header { background: #1f2937; color: white; padding: 20px; text-align: center; }
-    nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: bold; }
-    section { padding: 25px; max-width: 1000px; margin: auto; }
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 { color: #1f2937; }
-    ul { padding-left: 20px; }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #1f2937;
-      color: white;
-      margin-top: 20px;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
+<body class="bg-gray-900 text-white scroll-smooth">
 
-<body>
-
-<header>
-  <h1>Rishi Shrivastava</h1>
-  <p>Lead Administrator | Infrastructure Automation Engineer</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+<!-- Navbar -->
+<header class="flex justify-between items-center p-5 bg-gray-800 shadow-lg sticky top-0 z-50">
+  <h1 class="text-xl font-bold">Rishi</h1>
+  <nav class="space-x-4 text-sm">
+    <a href="#about" class="hover:text-blue-400">About</a>
+    <a href="#skills" class="hover:text-blue-400">Skills</a>
+    <a href="#projects" class="hover:text-blue-400">Projects</a>
+    <a href="#experience" class="hover:text-blue-400">Experience</a>
+    <a href="#contact" class="hover:text-blue-400">Contact</a>
   </nav>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
+<!-- Hero -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-4">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">Rishi Shrivastava 👋</h2>
+  <span id="typing" class="text-xl text-blue-400"></span>
+  <p class="mt-4 text-gray-400 max-w-xl">
+    Infrastructure Automation Engineer with 11+ years of experience in VMware, Cloud, and Enterprise IT Operations.
+  </p>
+  <a href="#contact" class="mt-6 px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600 transition">Hire Me</a>
+</section>
+
+<!-- About -->
+<section id="about" class="p-10 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+  <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
     <p>
-      Results-driven Infrastructure Automation Engineer with 11+ years of experience 
-      in VMware administration, cloud integration, and ITIL-based operations. 
-      Specialized in vRealize Automation (vRA), vRealize Orchestrator (vRO), AWS, Azure, 
-      and scripting (PowerShell, Python, JavaScript). Proven track record of improving 
-      infrastructure efficiency and reducing manual effort by 40%.
+      Results-driven Infrastructure Automation Engineer with expertise in vRealize Automation (vRA), vRealize Orchestrator (vRO), AWS, Azure, and scripting.
+      Successfully reduced manual provisioning effort by 40% and improved infrastructure efficiency across enterprise environments.
     </p>
   </div>
 </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-
-  <div class="card">
-    <h3>Lead Administrator — Wipro Limited (2022–Present)</h3>
-    <ul>
-      <li>Provide Tier 2/3 support for VMware vRA & vRO in enterprise environments</li>
-      <li>Reduced manual provisioning effort by 40% using automation workflows</li>
-      <li>Integrated automation into CI/CD pipelines</li>
-      <li>Managed patching, upgrades, and compliance audits</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Senior System Administrator — Varian Medical Systems (2019–2022)</h3>
-    <ul>
-      <li>Supported global IT infrastructure across Europe, America & APAC</li>
-      <li>Managed Windows & VMware environments for hospitals and IT teams</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Technical Associate — Tata Communications (2018–2019)</h3>
-    <ul>
-      <li>Managed Wintel infrastructure and VM lifecycle</li>
-      <li>Handled patching, vulnerability remediation, and incident management</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Associate Consultant — Atos (2014–2018)</h3>
-    <ul>
-      <li>Managed Active Directory, DNS, DHCP, VMware</li>
-      <li>Handled infrastructure operations for global clients</li>
-    </ul>
-  </div>
-
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="card">
-    <h3>Infrastructure Migration (VIT Project)</h3>
-    <p>Executed end-to-end migration to in-house infrastructure with zero downtime.</p>
-  </div>
-
-  <div class="card">
-    <h3>GSMC Windows Server Management</h3>
-    <p>Managed 500+ Windows servers ensuring performance, uptime, and security.</p>
-  </div>
-
-  <div class="card">
-    <h3>Automation Workflows</h3>
-    <p>Designed vRA/vRO workflows to optimize provisioning and reduce manual effort.</p>
-  </div>
-
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="card">
-    <ul>
-      <li>VMware vRealize Automation (vRA), vRO, vSphere</li>
-      <li>AWS, Azure, Hybrid Cloud</li>
-      <li>PowerShell, Python, JavaScript</li>
-      <li>CI/CD, Azure DevOps</li>
-      <li>ITIL, Incident & Change Management</li>
-      <li>Security Compliance & Reporting</li>
-    </ul>
+<!-- Skills -->
+<section id="skills" class="p-10 bg-gray-800">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
+  <div class="max-w-4xl mx-auto space-y-4">
+    <div><p>VMware / vRA / vRO</p><div class="w-full bg-gray-700 h-3 rounded"><div class="bg-blue-500 h-3 w-[90%] rounded"></div></div></div>
+    <div><p>AWS / Azure</p><div class="w-full bg-gray-700 h-3 rounded"><div class="bg-blue-500 h-3 w-[85%] rounded"></div></div></div>
+    <div><p>PowerShell / Python / JS</p><div class="w-full bg-gray-700 h-3 rounded"><div class="bg-blue-500 h-3 w-[85%] rounded"></div></div></div>
+    <div><p>CI/CD & DevOps</p><div class="w-full bg-gray-700 h-3 rounded"><div class="bg-blue-500 h-3 w-[80%] rounded"></div></div></div>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p><strong>Email:</strong> rishishrivastava53@yahoo.com</p>
-    <p><strong>Phone:</strong> +91-8320731980</p>
-    <p><strong>Location:</strong> Pune, India</p>
-    <p><strong>LinkedIn:</strong> 
-      <a href="https://www.linkedin.com/in/r1shrivastava" target="_blank">
-        www.linkedin.com/in/r1shrivastava
-      </a>
-    </p>
+<!-- Projects -->
+<section id="projects" class="p-10">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-lg hover:-translate-y-2 transition">
+      <h3 class="text-xl font-bold">Automation Workflows</h3>
+      <p class="text-gray-400">Reduced provisioning effort by 40% using vRA & vRO.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-lg hover:-translate-y-2 transition">
+      <h3 class="text-xl font-bold">Infrastructure Migration</h3>
+      <p class="text-gray-400">Seamless migration with zero downtime.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-lg hover:-translate-y-2 transition">
+      <h3 class="text-xl font-bold">500+ Server Management</h3>
+      <p class="text-gray-400">Managed large-scale Windows infrastructure.</p>
+    </div>
   </div>
 </section>
 
-<footer>
-  <p>© 2026 Rishi Shrivastava | Portfolio</p>
+<!-- Experience -->
+<section id="experience" class="p-10 bg-gray-800">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Experience</h2>
+  <div class="max-w-3xl mx-auto space-y-6">
+    <div class="border-l-4 border-blue-500 pl-4">
+      <h3 class="font-bold">Lead Administrator - Wipro (2022–Present)</h3>
+      <p class="text-gray-400">Automation, CI/CD integration, compliance, enterprise VMware support.</p>
+    </div>
+    <div class="border-l-4 border-blue-500 pl-4">
+      <h3 class="font-bold">Senior System Administrator - Varian (2019–2022)</h3>
+      <p class="text-gray-400">Global infrastructure support across healthcare environments.</p>
+    </div>
+    <div class="border-l-4 border-blue-500 pl-4">
+      <h3 class="font-bold">Technical Associate - Tata Communications</h3>
+      <p class="text-gray-400">Wintel infrastructure, patching, VM lifecycle.</p>
+    </div>
+    <div class="border-l-4 border-blue-500 pl-4">
+      <h3 class="font-bold">Associate Consultant - Atos</h3>
+      <p class="text-gray-400">AD, DNS, VMware, enterprise operations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="p-10 text-center">
+  <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+  <p>Email: rishishrivastava53@yahoo.com</p>
+  <p>Phone: +91-8320731980</p>
+  <p>Location: Pune, India</p>
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/r1shrivastava" target="_blank" class="text-blue-400">
+      www.linkedin.com/in/r1shrivastava
+    </a>
+  </p>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-5 bg-gray-800">
+  <p>© 2026 Rishi Shrivastava</p>
 </footer>
+
+<script>
+  var typed = new Typed("#typing", {
+    strings: ["Infrastructure Automation Engineer", "Cloud Engineer", "VMware Specialist"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
 
 </body>
 </html>
