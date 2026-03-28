@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishi Shrivastava | Premium Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body class="bg-gray-900 text-white scroll-smooth">
+
+<!-- Navbar -->
+<header class="flex justify-between items-center p-5 bg-gray-800 shadow-lg sticky top-0 z-50">
+  <h1 class="text-xl font-bold">Rishi</h1>
+  <nav class="space-x-4 text-sm">
+    <a href="#about" class="hover:text-blue-400">About</a>
+    <a href="#skills" class="hover:text-blue-400">Skills</a>
+    <a href="#projects" class="hover:text-blue-400">Projects</a>
+    <a href="#experience" class="hover:text-blue-400">Experience</a>
+    <a href="#contact" class="hover:text-blue-400">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-4">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm Rishi 👋</h2>
+  <span id="typing" class="text-xl text-blue-400"></span>
+  <p class="mt-4 text-gray-400 max-w-xl">L2 Infrastructure Engineer with expertise in cloud, networking, and system administration.</p>
+  <a href="#contact" class="mt-6 px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600 transition">Hire Me</a>
+</section>
+
+<!-- About -->
+<section id="about" class="p-10 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+  <div class="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+    <p>I am an experienced IT professional specializing in infrastructure support, server management, and cloud technologies. I focus on optimizing system performance and ensuring high availability.</p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="p-10 bg-gray-800">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
+  <div class="max-w-4xl mx-auto space-y-4">
+    <div>
+      <p>Linux</p>
+      <div class="w-full bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full w-[90%]"></div></div>
+    </div>
+    <div>
+      <p>AWS</p>
+      <div class="w-full bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full w-[80%]"></div></div>
+    </div>
+    <div>
+      <p>Networking</p>
+      <div class="w-full bg-gray-700 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full w-[85%]"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="p-10">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Projects</h2>
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-lg hover:-translate-y-2 transition">
+      <h3 class="text-xl font-bold">Monitoring System</h3>
+      <p class="text-gray-400">Implemented real-time monitoring tools.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-lg hover:-translate-y-2 transition">
+      <h3 class="text-xl font-bold">Cloud Migration</h3>
+      <p class="text-gray-400">Migrated workloads to AWS cloud.</p>
+    </div>
+    <div class="bg-gray-800 p-5 rounded-2xl shadow-lg hover:-translate-y-2 transition">
+      <h3 class="text-xl font-bold">Automation Scripts</h3>
+      <p class="text-gray-400">Developed scripts to automate tasks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Timeline -->
+<section id="experience" class="p-10 bg-gray-800">
+  <h2 class="text-3xl font-semibold mb-6 text-center">Experience</h2>
+  <div class="max-w-3xl mx-auto space-y-6">
+    <div class="border-l-4 border-blue-500 pl-4">
+      <h3 class="font-bold">L2 Infrastructure Engineer</h3>
+      <p class="text-gray-400">Handled incident management, troubleshooting, and server uptime.</p>
+    </div>
+    <div class="border-l-4 border-blue-500 pl-4">
+      <h3 class="font-bold">System Administrator</h3>
+      <p class="text-gray-400">Managed servers, backups, and user access control.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="p-10 text-center">
+  <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+  <p>Email: your.email@example.com</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+  <a href="#" class="inline-block mt-4 px-6 py-2 bg-green-500 rounded-xl hover:bg-green-600 transition">Download Resume</a>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-5 bg-gray-800">
+  <p>© 2026 Rishi Shrivastava</p>
+</footer>
+
+<script>
+  var typed = new Typed("#typing", {
+    strings: ["Cloud Engineer", "System Administrator", "Infrastructure Specialist"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
